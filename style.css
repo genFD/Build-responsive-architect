@@ -63,7 +63,7 @@ Header style
 ===============
 */
 
-header {
+#main-header {
   position: fixed;
   height: 10rem;
   width: 100%;
@@ -103,6 +103,61 @@ header {
   box-shadow: 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
 }
 
+#side-drawer {
+  position: fixed;
+  width: 25%;
+  height: 100vh;
+  background-color: rgb(44, 41, 38);
+  background-color: var(--neutral-white);
+  top: 0;
+  right: 0;
+  z-index: 300;
+  padding: 8rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* display: none; */
+}
+#side-drawer header {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+#side-drawer .close-btn {
+  font-size: 3rem;
+  color: var(--primary-dark-violet);
+}
+
+#side-drawer .nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#side-drawer .nav-links li a {
+  font-family: 'Baloo Da 2', serif;
+  font-size: 4rem;
+  color: var(--primary-dark-violet);
+}
+#side-drawer footer {
+  width: 80%;
+}
+#side-drawer .social-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+#side-drawer .social-links i {
+  font-size: 3rem;
+  color: var(--primary-dark-violet);
+}
+
+/*
+=============== 
+Main style
+===============
+*/
 .hero {
   width: 100%;
   height: 100vh;
