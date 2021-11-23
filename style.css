@@ -95,6 +95,15 @@ Header style
   height: 100%;
   cursor: pointer;
 }
+.menu-btn i {
+  font-size: 3rem;
+  color: var(--neutral-white);
+  transition: all 0.5s;
+}
+.menu-btn i:hover {
+  color: var(--primary-dark-violet);
+  transform: scale(1.2);
+}
 
 .menu-btn span {
   height: 2px;
@@ -102,9 +111,14 @@ Header style
   background-color: var(--neutral-white);
   box-shadow: 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
 }
-/* #side-drawer:target {
-  display: flex;
-} */
+.menu-btn span:hover {
+  background-color: var(--primary-dark-violet);
+}
+/*
+=============== 
+Side drawer style
+===============
+*/
 #side-drawer {
   position: fixed;
   width: 35rem;
@@ -114,7 +128,6 @@ Header style
   top: 0;
   right: 0;
   right: -35rem;
-  /* right: 0; */
   z-index: 300;
   padding: 8rem 0;
   display: flex;
@@ -134,11 +147,14 @@ Header style
 #side-drawer .close-btn {
   font-size: 3rem;
   color: var(--primary-dark-violet);
-  transition: color 0.3s;
+  transition: all 0.5s;
 }
 #side-drawer .close-btn:hover {
   color: var(--primary-grayish-blue);
+  color: #d32405;
+  transform: scale(0.8);
 }
+
 .close-btn-span {
   position: absolute;
   right: 8rem;
@@ -200,6 +216,27 @@ Header style
 #side-drawer .social-links i:hover {
   color: var(--primary-grayish-blue);
 }
+#side-drawer .social-links .fb-icon {
+  transition: all 0.5s;
+}
+#side-drawer .social-links .fb-icon:hover {
+  color: #4267b2;
+  transform: scale(1.2);
+}
+#side-drawer .social-links .twitter-icon {
+  transition: all 0.5s;
+}
+#side-drawer .social-links .twitter-icon:hover {
+  color: #1da1f2;
+  transform: scale(1.2);
+}
+#side-drawer .social-links .insta-icon {
+  transition: all 0.5s;
+}
+#side-drawer .social-links .insta-icon:hover {
+  color: #e1306c;
+  transform: scale(1.2);
+}
 /*
 =============== 
 Main style
@@ -256,9 +293,9 @@ Main style
   height: 7rem;
   background-color: var(--primary-dark-violet);
   border: none;
-  box-shadow: 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
   opacity: 0;
   animation: moveBanner 1s 0.9s forwards;
+  transition: background-color 0.5s;
 }
 .banner button a {
   color: var(--neutral-white);
@@ -266,6 +303,9 @@ Main style
   font-size: 2rem;
   text-transform: uppercase;
   text-shadow: 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
+}
+.banner button:hover {
+  background-color: var(--primary-grayish-blue);
 }
 
 @keyframes scale {
